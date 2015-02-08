@@ -12,4 +12,7 @@
 !/log/.keep
 /tmp
 
+# Ignore local environment setup
+.env
+
 *~
