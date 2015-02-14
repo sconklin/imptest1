@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Disk number:</strong>
+  <%= @kmsafe.disk_number %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @kmsafe.sector_id %>
+</p>
+
+<p>
+  <strong>Sector number l:</strong>
+  <%= @kmsafe.sector_number_l %>
+</p>
+
+<p>
+  <strong>Data l:</strong>
+  <%= @kmsafe.data_l %>
+</p>
+
+<p>
+  <strong>Data h:</strong>
+  <%= @kmsafe.data_h %>
+</p>
+
+<%= link_to 'Edit', edit_kmsafe_path(@kmsafe) %> |
+<%= link_to 'Back', kmsaves_path %>

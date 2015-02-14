@@ -1,0 +1,37 @@
+<%= form_for(@kmsafe) do |f| %>
+  <% if @kmsafe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kmsafe.errors.count, "error") %> prohibited this kmsafe from being saved:</h2>
+
+      <ul>
+      <% @kmsafe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :disk_number %><br>
+    <%= f.number_field :disk_number %>
+  </div>
+  <div class="field">
+    <%= f.label :sector_id %><br>
+    <%= f.number_field :sector_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sector_number_l %><br>
+    <%= f.number_field :sector_number_l %>
+  </div>
+  <div class="field">
+    <%= f.label :data_l %><br>
+    <%= f.text_field :data_l %>
+  </div>
+  <div class="field">
+    <%= f.label :data_h %><br>
+    <%= f.text_field :data_h %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

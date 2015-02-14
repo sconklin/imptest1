@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disk_number: 1
+  sector_id: 1
+  sector_number_l: 1
+  data_l: 
+  data_h: 
+
+two:
+  disk_number: 1
+  sector_id: 1
+  sector_number_l: 1
+  data_l: 
+  data_h: 
